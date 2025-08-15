@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sakshi Chilla | Portfolio</title>
+  <link rel="stylesheet" href="personal_port.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Sakshi Chilla</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <nav id="navMenu">
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="home">
+    <img src="C:\Users\sudar\OneDrive\Desktop\information\passport_size.jpg" alt="Sakshi Chilla" class="profile-pic" />
+    <h1>Hello, I'm Sakshi Chilla</h1>
+    <p>Web Developer | Problem Solver | Tech Enthusiast</p>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>👨‍🎓 Education: BCA, Solapur University</p>
+    <p>💼 Skills: Java Developer, Web Developer, Data Scientist</p>
+    <p>🎯 Hobbies: Coding, Photography, Chess, Blogging</p>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-gallery">
+      <div class="project">
+        <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/squarespace-portfolio-website-builder.jpg" alt="Portfolio Website" />
+        <h3>Portfolio Website</h3>
+        <p>A responsive personal portfolio site made with HTML, CSS, and JS.</p>
+      </div>
+      <div class="project">
+        <img src="https://static.vecteezy.com/system/resources/previews/020/330/631/original/3d-glassmorphism-weather-forecast-app-template-mobile-interface-template-weather-icons-set-isolated-on-blue-background-vector.jpg" alt="Weather App" />
+        <h3>Weather App</h3>
+        <p>Real-time weather data using OpenWeather API and JavaScript.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume" class="resume">
+    <h2>My Resume</h2>
+    <a href="C:\Users\sudar\OneDrive\Desktop\information\majha_resume.pdf" target="_blank" download class="resume-btn">📄 View & Download Resume</a>
+  </section>
+
+ <section id="contact">
+  <h2>Contact Me</h2>
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Your Name" required />
+    <input type="email" id="email" placeholder="Your Email" required />
+    <input type="text" id="subject" placeholder="Subject" required />
+    <textarea id="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <div id="formStatus"></div>
+</section>
+ 
+
+  <footer>
+    <p>© 2025 Sakshi Chilla. All rights reserved.</p>
+  </footer>
+
+  <script src="personal_port.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sports Buddy</title>
+  <link rel="stylesheet" href="sp.css">
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+</head>
+<body>
+  <h2>Sports Buddy</h2>
+
+  <div class="auth-section">
+    <input type="email" id="email" placeholder="Email" />
+    <input type="password" id="password" placeholder="Password" />
+    <button id="register-btn">Register</button>
+    <button id="login-btn">Login</button>
+  </div>
+
+  <div id="user-info"></div>
+
+  <div id="event-section" class="hidden">
+    <h3>Add Event</h3>
+    <input type="text" id="sport-name" placeholder="Sport Name" />
+    <input type="text" id="location" placeholder="Location" />
+    <input type="text" id="time" placeholder="Time" />
+    <button id="add-event-btn">Add Event</button>
+
+    <h3>Your Events</h3>
+    <div id="events-list"></div>
+  </div>
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDjGerna0AqzARHFxrnq4M1_116ohL5sOk",
+    authDomain: "sports-buddy-35ae6.firebaseapp.com",
+    projectId: "sports-buddy-35ae6",
+    storageBucket: "sports-buddy-35ae6.firebasestorage.app",
+    messagingSenderId: "283914287646",
+    appId: "1:283914287646:web:8f9e2900d46957f44f0c0f",
+    measurementId: "G-JH5EZXJL1X"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
+  <script src="sp.js"></script>
+</body>
+</html>
